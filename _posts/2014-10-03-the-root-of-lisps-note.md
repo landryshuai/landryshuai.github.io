@@ -24,6 +24,8 @@ tags: [lisp]
  6. `(cons x y)` y is a list, return a list: x the first element, y the remains.
  7. `(cond (p1,e1)...(pn,en))` the p expressions are evaluated in order until one return T. when one is found, the value of the corresponding e expresssion is return as the value of whole cond expression.
 
+<!-- more -->
+
 ####Important:
 
 In five of our seven primitive operators, the arguments are always evaluated when an expression beginning with that operator is evaluated. we call an operator of that type a funtion.
