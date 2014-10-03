@@ -1,21 +1,20 @@
 # Site settings
-title: "Jekyll template demo"
-description: "jekyll template demo."
-keywords: "jekyll, template, demo"
+title: "Landryshuai"
+description: "天地不仁，以万物为刍狗。"
+keywords: "jekyll, template, landryshuai"
 baseurl: ""
-url: "http:////ihavee.github.io"
+url: "http:////landryshuai.github.io"
 highlighter: pygments
 paginate: 5
 author:
-    name: Havee
-    github: Ihavee
-    email:
-    gitcafe: Havee
+    name: landryshuai
+    github: landryshuai
+    email: landry.sjm@gmail.com
+    gitcafe: landryshuai
     twitter:
     facebook:
-    googleplus:
-    weibo: Havanna
-qiniudn: //havee.qiniudn.com                # //{bucket}.qiniudn.com
+    googleplus: landryshuai
+    weibo: landryshuai
 atom_path: /atom.xml
 rss_path: /rss.xml
 
@@ -46,3 +45,7 @@ blogroll: true
 brlist:
     - text: "Havee's Space"
       url : //havee.me/
+    - text: "小气的神"
+      url : //www.mdong.org/
+    - text: "冰河"
+      url : //tianchunbinghe.blog.163.com/
