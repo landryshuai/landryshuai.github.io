@@ -3,7 +3,7 @@ layout: post
 title: "The root of Lisp's Note"
 description: ""
 keywords: ""
-category: 
+category: [work]
 tags: [lisp]
 ---
 ###1. Definitions:

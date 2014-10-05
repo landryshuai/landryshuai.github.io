@@ -3,7 +3,7 @@ layout: post
 title: "java data structure"
 description: ""
 keywords: ""
-category: 
+category: [work]
 tags: [java]
 ---
 程序都需要存储数据，谈谈我对java中容器的理解：

@@ -3,7 +3,7 @@ layout: post
 title: "Android Broadcast"
 description: ""
 keywords: ""
-category: 
+category: [work]
 tags: [Android]
 ---
 # Android Broadcast总结

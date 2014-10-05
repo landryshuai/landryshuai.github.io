@@ -3,7 +3,7 @@ layout: post
 title: "Android Touch Event"
 description: ""
 keywords: ""
-category: 
+category: [work]
 tags: [Android, java]
 ---
 # Android Touch事件

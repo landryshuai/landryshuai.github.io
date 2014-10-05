@@ -3,7 +3,7 @@ layout: post
 title: "Why are only final variables accessible in anonymous class?"
 description: ""
 keywords: ""
-category: 
+category: [work]
 tags: [java]
 ---
 ###问题
