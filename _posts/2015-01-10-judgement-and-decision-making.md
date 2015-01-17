@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "笔记：决策与判读"
+title: "笔记：决策与判断"
 description: ""
 keywords: ""
 category: [books]
