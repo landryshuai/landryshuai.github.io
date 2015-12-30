@@ -104,6 +104,7 @@ I/System.out(21195): LinearLayout::onTouchEvent::action=ACTION_UP
 其实就我个人理解而言。这套系统的目标其实是这样的。一个touch事件该由谁来消费的问题。touch事件而且只能由onTouchEvent来表示有没有消费。
 
 默认dispatchTouchEvent的情况下：
+
  * 首先，touch事件，一层一层，从最外层，往里层传递。
  * 到了每一层，每一层的父view都有机会通过onInterceptTouchEvent 返回true，来表示他不希望他的子view接触到事件；通过 onTouchEvent 返回true来表示他消费了事件（注意父view，可以截获事件，可以不消费事件，也就是防止子view接触到事件）
  * 只有有一个view表示他想在ACTION_DOWN的时候，通过onInterceptTouchEvent 来返回true来表示他感兴趣的话。以后到了这一层，直接走其onTouchEvent，连onInterceptTouchEvent 也不会走。
@@ -116,7 +117,7 @@ I/System.out(21195): LinearLayout::onTouchEvent::action=ACTION_UP
 
 另外还有一个问题。就是其实viewGroup的dispatchTouchEvent起到的作用，我们已经知道了。那么其实view本身就有个dispatchTouchEvent。他是起到什么作用呢？点击啊，双击啊，都是通过onTouchEvent来处理的啊。
 
-｀``java
+｀``
 ListenerInfo li = mListenerInfo;
 if (li != null && li.mOnTouchListener != null
 && (mViewFlags & ENABLED_MASK) == ENABLED
