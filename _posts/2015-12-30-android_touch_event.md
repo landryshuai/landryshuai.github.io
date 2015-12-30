@@ -3,8 +3,8 @@ layout: post
 title: "android touch event理解"
 description: ""
 keywords: ""
-category: [java]
-tags: [java]
+category: [android]
+tags: [android]
 ---
 ###理解TouchEvent事件
 
