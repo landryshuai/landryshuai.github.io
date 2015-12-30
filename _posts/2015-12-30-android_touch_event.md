@@ -74,6 +74,7 @@ I/System.out(13814): Activity:onTouchEvent::action=ACTION_MOVE
 I/System.out(13814): Activity:onTouchEvent::action=ACTION_UP
 ```
 #####ViewGroup的onTouchEvent为true的时候，如下直接走ViewGroup的onTouchEvent,甚至连ViewGroup本身的onInterceptTouchEvent也不走了。
+
 ```
 I/System.out(21195): LinearLayout::dispatchTouchEvent::action=ACTION_DOWN
 I/System.out(21195): LinearLayout::onInterceptTouchEvent::action=ACTION_DOWN
@@ -117,7 +118,7 @@ I/System.out(21195): LinearLayout::onTouchEvent::action=ACTION_UP
 
 另外还有一个问题。就是其实viewGroup的dispatchTouchEvent起到的作用，我们已经知道了。那么其实view本身就有个dispatchTouchEvent。他是起到什么作用呢？点击啊，双击啊，都是通过onTouchEvent来处理的啊。
 
-｀``
+```java
 ListenerInfo li = mListenerInfo;
 if (li != null && li.mOnTouchListener != null
 && (mViewFlags & ENABLED_MASK) == ENABLED
@@ -128,7 +129,7 @@ result = true;
 if (!result && onTouchEvent(event)) {
 result = true;
 }
-｀``
+```
 
 已经清楚的说明到，他会先走setOnTouchEventListener，最后才走onTouchEvent事件的。也很显然的猜测到viewgroup onInterceptTouchEvent为true的时候，后面肯定是要调用到viewgroup的touchEvent的，通过什么方法呢？必然是view的dispatchTouchEvent。
 
