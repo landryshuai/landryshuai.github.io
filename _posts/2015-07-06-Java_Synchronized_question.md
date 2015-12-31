@@ -21,7 +21,7 @@ tags: [java]
 
 #### 我的代码
 
-```
+```java
 package com.landry;
 
 public class ThreadTest {
